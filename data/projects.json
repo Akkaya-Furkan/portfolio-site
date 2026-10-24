@@ -2,6 +2,40 @@
   "schema": 1,
   "projects": [
     {
+      "id": "P02",
+      "repo": "egfr-mmgbsa",
+      "fields": {
+        "title": {
+          "text": "EGFR resistance — does MM-GBSA rank better than docking?",
+          "start": 1,
+          "end": 1,
+          "raw": "# EGFR resistance — does MM-GBSA rank better than docking?"
+        },
+        "results": {
+          "text": "Both methods put T790M first. MM-GBSA resolves T790M from the triple-mutant construct: −15.0 kcal/mol (95 % CI −23.8 … −6.3; Welch p = 0.01; n = 3 seeds per genotype). About two thirds of that gap (−10.1) is van der Waals.",
+          "start": 19,
+          "end": 20,
+          "raw": "* **Both methods put T790M first.** MM-GBSA resolves T790M from the triple-mutant construct: −15.0 kcal/mol\n  (95 % CI −23.8 … −6.3; Welch p = 0.01; n = 3 seeds per genotype). About two thirds of that gap (−10.1) is van der Waals.",
+          "heading": "Result in brief"
+        },
+        "limitations": {
+          "text": "1. Starting-structure bias. WT starts from a gefitinib-bound crystal, T790M and the triple construct from structures with the co-crystal ligand YY3; osimertinib was docked into all three. Pocket shape differs by construction, which can favour the mutants and contributes to the WT pose drift. 2. n = 3 seeds from one equilibrated state per genotype: SDs underestimate structural uncertainty; the T790M–WT comparison is under-powered. 3. WT not converged at 20 ns (seed 3 drifting, seed 1 settled in a displaced pose). A longer WT run from several starting poses is the remaining open item. 4. Osimertinib binds C797 covalently; everything here is non-covalent, so C797S resistance is not expected to appear in these energies. 5. No entropy; GB/PB disagree by ≈ 60 kcal/mol in absolute terms; only rankings are used. 6. Per-residue decomposition uses 25 frames per run and three seeds; an earlier single-seed version (one seed vs an unequilibrated WT) suggested residue 797 as the largest contributor (−3.4); with three seeds it is −1.66 ± 0.85 and not resolved, and residue 718 leads.",
+          "start": 54,
+          "end": 59,
+          "raw": "1. **Starting-structure bias.** WT starts from a gefitinib-bound crystal, T790M and the triple construct from structures with the co-crystal ligand YY3; osimertinib was docked into all three. Pocket shape differs by construction, which can favour the mutants and contributes to the WT pose drift.\n2. **n = 3 seeds from one equilibrated state** per genotype: SDs underestimate structural uncertainty; the T790M–WT comparison is under-powered.\n3. **WT not converged** at 20 ns (seed 3 drifting, seed 1 settled in a displaced pose). A longer WT run from several starting poses is the remaining open item.\n4. Osimertinib binds C797 covalently; everything here is non-covalent, so C797S resistance is not expected to appear in these energies.\n5. No entropy; GB/PB disagree by ≈ 60 kcal/mol in absolute terms; only rankings are used.\n6. Per-residue decomposition uses 25 frames per run and three seeds; an earlier single-seed version (one seed vs an unequilibrated WT) suggested residue 797 as the largest contributor (−3.4); with three seeds it is −1.66 ± 0.85 and not resolved, and residue 718 leads."
+        },
+        "question": {
+          "text": "Does end-point free energy (MM-GBSA) rank the EGFR resistance pattern for osimertinib better than docking scores (egfr-resistance-docking)?",
+          "start": 3,
+          "end": 4,
+          "raw": "**Question.** Does end-point free energy (MM-GBSA) rank the EGFR resistance pattern for osimertinib better\nthan docking scores ([egfr-resistance-docking](https://github.com/Akkaya-Furkan/egfr-resistance-docking))?"
+        }
+      },
+      "commit": "7d8798fd2d8f3d36288982cd422a4b4e0c64356e",
+      "readme_sha256": "dbdddaafcb7110fb3c52399b427b80d1213df003255ba6f797224c2996757998",
+      "url": "https://github.com/Akkaya-Furkan/egfr-mmgbsa/blob/7d8798fd2d8f3d36288982cd422a4b4e0c64356e/README.md"
+    },
+    {
       "id": "P03",
       "repo": "herg-cardiotox-classifier",
       "fields": {
@@ -21,7 +55,8 @@
           "text": "Held-out test set, 1,275 compounds (75% blockers). The scaffold split shares no Bemis–Murcko scaffold between train and test; it is the honest number.",
           "start": 24,
           "end": 24,
-          "raw": "Held-out test set, 1,275 compounds (75% blockers). The scaffold split shares no Bemis–Murcko scaffold between train and test; it is the honest number."
+          "raw": "Held-out test set, 1,275 compounds (75% blockers). The scaffold split shares no Bemis–Murcko scaffold between train and test; it is the honest number.",
+          "heading": "Results"
         },
         "question": {
           "text": "Can hERG channel blockade be predicted from structure early in discovery?",
@@ -33,6 +68,142 @@
       "commit": "a89ec78aca99acece4a520e363a8b39c26b37519",
       "readme_sha256": "78d005faf5dd5d22dea973ad8c0bec9dfca6b6700496b0b9b0a9dfb3952a51f1",
       "url": "https://github.com/Akkaya-Furkan/herg-cardiotox-classifier/blob/a89ec78aca99acece4a520e363a8b39c26b37519/README.md"
+    },
+    {
+      "id": "P05",
+      "repo": "target-prioritization-network",
+      "fields": {
+        "title": {
+          "text": "Target prioritisation network (Open Targets + ChEMBL)",
+          "start": 1,
+          "end": 1,
+          "raw": "# Target prioritisation network (Open Targets + ChEMBL)"
+        },
+        "results": {
+          "text": "Assoc-heavy: top-10 overlap with main = 7/10 (entered: ALOX5, PTGS1, TNF; left: CXCR2, ESR1, S1PR1); Spearman over all 200 targets = 0.978.",
+          "start": 41,
+          "end": 41,
+          "raw": "- Assoc-heavy: top-10 overlap with main = **7/10** (entered: ALOX5, PTGS1, TNF; left: CXCR2, ESR1, S1PR1); Spearman over all 200 targets = 0.978.",
+          "heading": "Sensitivity to weights"
+        },
+        "limitations": {
+          "text": "Database/literature analysis only; no clinical or treatment recommendation.",
+          "start": 49,
+          "end": 49,
+          "raw": "- Database/literature analysis only; **no clinical or treatment recommendation**."
+        },
+        "question": {
+          "text": "In a chosen disease area, which targets stand out on evidence and tractability? Answer for ulcerative colitis (UC): under an equal-weight score, JAK2 and JAK3 rank first; IL23R, TYK2, PPARG, PTGS2, NR3C1 and S1PR1 follow, and the order below the top two is weight-dependent (see sensitivity). This is a database/literature exercise, not a clinical or treatment recommendation.",
+          "start": 3,
+          "end": 4,
+          "raw": "**Question.** In a chosen disease area, which targets stand out on evidence and tractability?\n**Answer for ulcerative colitis (UC):** under an equal-weight score, JAK2 and JAK3 rank first; IL23R, TYK2, PPARG, PTGS2, NR3C1 and S1PR1 follow, and the *order below the top two is weight-dependent* (see sensitivity). This is a database/literature exercise, **not** a clinical or treatment recommendation."
+        }
+      },
+      "commit": "64ca1e87035bf299d494831c6bc9d97b81791f6c",
+      "readme_sha256": "e586e8453dab2dbdd14dcb96d7d6393861e7a5b3818baa9df83b0c0cffcbd572",
+      "url": "https://github.com/Akkaya-Furkan/target-prioritization-network/blob/64ca1e87035bf299d494831c6bc9d97b81791f6c/README.md"
+    },
+    {
+      "id": "P07",
+      "repo": "bio-lookup-api",
+      "fields": {
+        "title": {
+          "text": "Compound/target lookup API",
+          "start": 1,
+          "end": 1,
+          "raw": "# Compound/target lookup API"
+        },
+        "limitations": {
+          "text": "The cache is per process and does not stop two simultaneous misses from both calling the upstream.",
+          "start": 71,
+          "end": 71,
+          "raw": "- The cache is per process and does not stop two simultaneous misses from both calling the upstream."
+        },
+        "results": {
+          "text": "Deployed on Render (free plan, Frankfurt). All endpoints checked against the live services, locally and on the deployed instance.",
+          "start": 77,
+          "end": 77,
+          "raw": "Deployed on Render (free plan, Frankfurt). All endpoints checked against the live services, locally and on the deployed instance.",
+          "heading": "Status"
+        },
+        "question": {
+          "text": "One API that resolves a compound to its properties, bioactivities and protein targets.",
+          "start": 5,
+          "end": 5,
+          "raw": "**Question.** One API that resolves a compound to its properties, bioactivities and protein targets."
+        }
+      },
+      "commit": "3093b549cfaf40e1c0bf4eb3817a98efa4262441",
+      "readme_sha256": "dbead617aa4b56cca02b036d1d701894bbb86374ed5f7f5e3a1f7248d5a88c62",
+      "url": "https://github.com/Akkaya-Furkan/bio-lookup-api/blob/3093b549cfaf40e1c0bf4eb3817a98efa4262441/README.md"
+    },
+    {
+      "id": "P08",
+      "repo": "ligprep-cli",
+      "fields": {
+        "title": {
+          "text": "Ligand preparation CLI",
+          "start": 1,
+          "end": 1,
+          "raw": "# Ligand preparation CLI"
+        },
+        "limitations": {
+          "text": "Quality is that of PubChem's computed 3D conformer; no protonation at a given pH and no tautomer enumeration.",
+          "start": 62,
+          "end": 62,
+          "raw": "- Quality is that of PubChem's computed 3D conformer; no protonation at a given pH and no tautomer enumeration."
+        },
+        "results": {
+          "text": "v0.1.0: packaging, tests and CI done.",
+          "start": 67,
+          "end": 67,
+          "raw": "v0.1.0: packaging, tests and CI done.",
+          "heading": "Status"
+        },
+        "question": {
+          "text": "A command-line tool that turns names, CIDs or SMILES into docking-ready PDBQT files — with built-in checks.",
+          "start": 3,
+          "end": 3,
+          "raw": "**Question.** A command-line tool that turns names, CIDs or SMILES into docking-ready PDBQT files — with built-in checks."
+        }
+      },
+      "commit": "7930ed9f4e3612de6178715f7a9756d93ebac6a9",
+      "readme_sha256": "af0b9b7ff0397eb115d4ebc30f99ea8bb5eb92258b3604af01d71696a6c1b80d",
+      "url": "https://github.com/Akkaya-Furkan/ligprep-cli/blob/7930ed9f4e3612de6178715f7a9756d93ebac6a9/README.md"
+    },
+    {
+      "id": "P10",
+      "repo": "service-health-dashboard",
+      "fields": {
+        "title": {
+          "text": "Self-hosted service health dashboard",
+          "start": 1,
+          "end": 1,
+          "raw": "# Self-hosted service health dashboard"
+        },
+        "results": {
+          "text": "Frontend: server-rendered Jinja2 page at / with htmx (vendored static/htmx.min.js 2.0.4, no CDN). Container cards (state, CPU, memory) poll /ui/services every 10 s; uptime cards (24 h status bar, response-time line, uptime %, avg/last ms) poll /ui/uptime every 15 s. Empty and error states are rendered.",
+          "start": 17,
+          "end": 17,
+          "raw": "- Frontend: server-rendered Jinja2 page at `/` with htmx (vendored `static/htmx.min.js` 2.0.4, no CDN). Container cards (state, CPU, memory) poll `/ui/services` every 10 s; uptime cards (24 h status bar, response-time line, uptime %, avg/last ms) poll `/ui/uptime` every 15 s. Empty and error states are rendered.",
+          "heading": "What exists"
+        },
+        "limitations": {
+          "text": "CPU % uses the docker stats formula from a single sample; stats are best-effort and absent for stopped containers.",
+          "start": 50,
+          "end": 50,
+          "raw": "- CPU % uses the `docker stats` formula from a single sample; stats are best-effort and absent for stopped containers."
+        },
+        "question": {
+          "text": "A small, read-only dashboard for container status, resource use and HTTP uptime.",
+          "start": 3,
+          "end": 3,
+          "raw": "**Question.** A small, read-only dashboard for container status, resource use and HTTP uptime."
+        }
+      },
+      "commit": "f0d9c89a4405eb2b26bb5799c1e036eeab6313a6",
+      "readme_sha256": "1ea22406ab53d49960d873555bbb05f955324aba6311eb5493f1db70af12348d",
+      "url": "https://github.com/Akkaya-Furkan/service-health-dashboard/blob/f0d9c89a4405eb2b26bb5799c1e036eeab6313a6/README.md"
     },
     {
       "id": "P11",
@@ -54,7 +225,8 @@
           "text": "Recovery. 301 of the 302 published significant genes in the common universe are also significant in pyDESeq2 (99.7%), all 301 in the same direction. The only miss is RASD1 (published q = 0.016). 14 published significant genes are not tested by pyDESeq2 (symbol mismatch or filtered).",
           "start": 51,
           "end": 53,
-          "raw": "* **Recovery.** 301 of the 302 published significant genes in the common universe are also significant in\n  pyDESeq2 (99.7%), all 301 in the same direction. The only miss is RASD1 (published q = 0.016).\n  14 published significant genes are not tested by pyDESeq2 (symbol mismatch or filtered)."
+          "raw": "* **Recovery.** 301 of the 302 published significant genes in the common universe are also significant in\n  pyDESeq2 (99.7%), all 301 in the same direction. The only miss is RASD1 (published q = 0.016).\n  14 published significant genes are not tested by pyDESeq2 (symbol mismatch or filtered).",
+          "heading": "Results"
         },
         "limitations": {
           "text": "The original Cuffdiff run (version, annotation, exact sample grouping, pooling of replicates) is not documented in the deposited table; differences are reported as method differences. Whether the table pools only dexamethasone-alone samples or also the albuterol groups is not stated and was not determined.",
@@ -63,9 +235,9 @@
           "raw": "* The original Cuffdiff run (version, annotation, exact sample grouping, pooling of replicates) is not documented in the\n  deposited table; differences are reported as method differences. Whether the table pools only dexamethasone-alone\n  samples or also the albuterol groups is not stated and was not determined."
         }
       },
-      "commit": "a9e9bbcbfa3b177139fbb6bfa50c5198592f8457",
+      "commit": "2d510f1548e297cddc343ee1e54312df2d91b62a",
       "readme_sha256": "b80d04c2ea984423f7a8933b5741386a3d41f505fbe0e10f7d3f225cebfa856c",
-      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/a9e9bbcbfa3b177139fbb6bfa50c5198592f8457/README.md"
+      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/2d510f1548e297cddc343ee1e54312df2d91b62a/README.md"
     },
     {
       "id": "P12",
@@ -87,7 +259,8 @@
           "text": "QC retained 2,612/2,700 cells and removed 88.",
           "start": 52,
           "end": 52,
-          "raw": "- QC retained **2,612/2,700 cells** and removed **88**."
+          "raw": "- QC retained **2,612/2,700 cells** and removed **88**.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Reference-label accuracy, external validation and donor generalization: not done. This is one healthy-donor dataset; CellTypist is another inferred annotation, and overlap with the pretrained model's training sources has not been audited.",
@@ -114,7 +287,8 @@
           "text": "Both predictors are close to the diagonal: ECE = 0.016 (95 % CI 0.013–0.022; 36,467 residues) for ESMFold and 0.012 (0.004–0.024; 30,196 residues) for AlphaFold DB.",
           "start": 44,
           "end": 44,
-          "raw": "- Both predictors are close to the diagonal: ECE = **0.016** (95 % CI 0.013–0.022; 36,467 residues) for ESMFold and **0.012** (0.004–0.024; 30,196 residues) for AlphaFold DB."
+          "raw": "- Both predictors are close to the diagonal: ECE = **0.016** (95 % CI 0.013–0.022; 36,467 residues) for ESMFold and **0.012** (0.004–0.024; 30,196 residues) for AlphaFold DB.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Accuracy reference is a single crystal structure. lDDT against one X-ray model penalises genuine flexibility and crystal-packing differences; lDDT is computed on Cα atoms only (not all-atom lDDT), residues are scored equally rather than contact-weighted, and chains were evaluated alone (no ligand, partner or oligomer context).",
@@ -129,9 +303,9 @@
           "raw": "**Question.** pLDDT is the per-residue confidence reported by AlphaFold and ESMFold. Does it track the *actual* accuracy\nof a model against an experimental structure, i.e. is it **calibrated** (a residue with pLDDT 80 is ~0.80 correct)?\nDoes that hold for structures the predictors could not have seen, and for regions that are disordered?"
         }
       },
-      "commit": "c6cad927f15a993a0eda55f8dd48544cc12e8416",
+      "commit": "b28512666654f22550491977a693d4928f11e194",
       "readme_sha256": "3fdb9ab1f02b60960127413c67ea4f6999cf86bc319d05e232c78baca646cd28",
-      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/c6cad927f15a993a0eda55f8dd48544cc12e8416/README.md"
+      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/b28512666654f22550491977a693d4928f11e194/README.md"
     },
     {
       "id": "P14",
@@ -153,7 +327,8 @@
           "text": "With the IC50 well inside the range, the median error is ≈0 and RMSE ≈ 0.09 log10 (≈ 23%); the nominal 95% interval covered the truth in about 90–91% of the datasets that were reported — slightly anti-conservative.",
           "start": 56,
           "end": 56,
-          "raw": "* With the IC50 well inside the range, the median error is ≈0 and RMSE ≈ 0.09 log10 (≈ 23%); the nominal 95% interval covered the truth in about 90–91% of the datasets that were reported — **slightly anti-conservative**."
+          "raw": "* With the IC50 well inside the range, the median error is ≈0 and RMSE ≈ 0.09 log10 (≈ 23%); the nominal 95% interval covered the truth in about 90–91% of the datasets that were reported — **slightly anti-conservative**.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Not done: no hierarchical / replicate-level error model; no outlier removal; no Bayesian intervals; no multiple-testing treatment across a plate; no 3-parameter (fixed-slope) or biphasic models; no global fits across plates.",
@@ -186,7 +361,8 @@
           "text": "The core model's lethal genes are gltA (b0720), icd (b1136), gapA (b1779), ptsH (b2415), ptsI (b2416), eno (b2779), and pgk (b2926). The ptsH and ptsI deletions are infeasible under fixed maintenance; the other 135 core solves are optimal. All 1367 iJO1366 solves are optimal.",
           "start": 43,
           "end": 43,
-          "raw": "The core model's lethal genes are `gltA` (b0720), `icd` (b1136), `gapA` (b1779), `ptsH` (b2415), `ptsI` (b2416), `eno` (b2779), and `pgk` (b2926). The `ptsH` and `ptsI` deletions are infeasible under fixed maintenance; the other 135 core solves are optimal. All 1367 iJO1366 solves are optimal."
+          "raw": "The core model's lethal genes are `gltA` (b0720), `icd` (b1136), `gapA` (b1779), `ptsH` (b2415), `ptsI` (b2416), `eno` (b2779), and `pgk` (b2926). The `ptsH` and `ptsI` deletions are infeasible under fixed maintenance; the other 135 core solves are optimal. All 1367 iJO1366 solves are optimal.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "The core model covers only a small metabolic network. Experimental essentiality scoring is performed only on iJO1366, not on the core model.",
@@ -213,7 +389,8 @@
           "text": "Random splitting overstates ROC-AUC by about 0.065 (secreted peptides) and 0.04 (fragments) compared to the purged split.",
           "start": 40,
           "end": 40,
-          "raw": "- Random splitting overstates ROC-AUC by about 0.065 (secreted peptides) and 0.04 (fragments) compared to the purged split."
+          "raw": "- Random splitting overstates ROC-AUC by about 0.065 (secreted peptides) and 0.04 (fragments) compared to the purged split.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Negative set choice inflates performance and cannot be removed. Both negative sets are assumed inactive (non-antimicrobial annotation in Swiss-Prot), not assayed. They differ from AMPs in origin and processing, so a classifier may partly learn \"database/annotation type\". Fragments are not real peptides; secreted peptides are few (1,279 after matching) and hard to match on every property. Performance against experimentally confirmed inactive peptides is not measured (not done).",
@@ -228,9 +405,9 @@
           "raw": "**Question.** Can antimicrobial activity be predicted from sequence features alone, and how much of the\napparent accuracy survives once train and test peptides are properly separated by sequence similarity?"
         }
       },
-      "commit": "b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4",
+      "commit": "7ea6c0bf87fd932c2b0289066ae7bf074b871d55",
       "readme_sha256": "c01b57d2f14fa9b3876e1fe42431a478b7e87f0514e902b4a3f0f4efeb2e3d04",
-      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4/README.md"
+      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/7ea6c0bf87fd932c2b0289066ae7bf074b871d55/README.md"
     },
     {
       "id": "P17",
@@ -252,7 +429,8 @@
           "text": "There are 612 missing entries among 30,114 tested sample–protein entries (2.03%). Before the coverage filter, sample missingness ranges from 13.20% to 23.81%; afterward it ranges from 0.46% to 6.63%. These percentages use the corresponding unrounded counts in missingness.tsv.",
           "start": 30,
           "end": 30,
-          "raw": "There are 612 missing entries among 30,114 tested sample–protein entries (2.03%). Before the coverage filter, sample missingness ranges from 13.20% to 23.81%; afterward it ranges from 0.46% to 6.63%. These percentages use the corresponding unrounded counts in [missingness.tsv](results/missingness.tsv)."
+          "raw": "There are 612 missing entries among 30,114 tested sample–protein entries (2.03%). Before the coverage filter, sample missingness ranges from 13.20% to 23.81%; afterward it ranges from 0.46% to 6.63%. These percentages use the corresponding unrounded counts in [missingness.tsv](results/missingness.tsv).",
+          "heading": "Results"
         },
         "limitations": {
           "text": "The archive assigns 6/143 fraction files to L1–L3 although their filenames contain Ecoli30: fractions 23 and 24 in each L sample. H1 also has 23 fraction files versus 24 in each other aggregate sample. The processed H/L assignments and published contrast are retained; resolving these source inconsistencies is not done. Per-sample file counts and conflicts are reported in results/samples.tsv.",
@@ -285,7 +463,8 @@
           "text": "19/19 pytest cases passed in 8.03 seconds.",
           "start": 94,
           "end": 94,
-          "raw": "- 19/19 pytest cases passed in 8.03 seconds."
+          "raw": "- 19/19 pytest cases passed in 8.03 seconds.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Distributed execution, authentication/TLS, production deployment, resource quotas, retry backoff, scheduling, priorities and arbitrary task plugins: not done. Bind to loopback; this is a trusted local demonstration service.",
@@ -318,7 +497,8 @@
           "text": "The demo verifier starts a loopback HTTP server, logs into both accounts, exercises search/export/download, stops the server and starts a fresh app against the same SQLite file. CSV labels, values, units and dates match the database. The downloaded attachment matches all 76 bytes, with SHA-256 2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc. Duplicate seeding is refused and the stored record counts remain unchanged.",
           "start": 95,
           "end": 100,
-          "raw": "The demo verifier starts a loopback HTTP server, logs into both accounts, exercises\nsearch/export/download, stops the server and starts a fresh app against the same\nSQLite file. CSV labels, values, units and dates match the database. The downloaded\nattachment matches all **76 bytes**, with SHA-256\n`2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc`.\nDuplicate seeding is refused and the stored record counts remain unchanged."
+          "raw": "The demo verifier starts a loopback HTTP server, logs into both accounts, exercises\nsearch/export/download, stops the server and starts a fresh app against the same\nSQLite file. CSV labels, values, units and dates match the database. The downloaded\nattachment matches all **76 bytes**, with SHA-256\n`2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc`.\nDuplicate seeding is refused and the stored record counts remain unchanged.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Public/production deployment: not done. Run locally using the instructions above; no deployed service is claimed.",
@@ -351,7 +531,8 @@
           "text": "The download contains 60/60 requested records, 60 unique PMIDs and 59 non-empty abstracts. One record passed the remote hasabstract query but has no abstract in the returned XML; it is retained transparently. The extractor produced 527 mention rows, 164 distinct document–entity pairs, and 20 distinct canonical entities.",
           "start": 95,
           "end": 99,
-          "raw": "The download contains **60/60 requested records**, **60 unique PMIDs** and\n**59 non-empty abstracts**. One record passed the remote `hasabstract` query but\nhas no abstract in the returned XML; it is retained transparently. The extractor\nproduced **527 mention rows**, **164 distinct document–entity pairs**, and\n**20 distinct canonical entities**."
+          "raw": "The download contains **60/60 requested records**, **60 unique PMIDs** and\n**59 non-empty abstracts**. One record passed the remote `hasabstract` query but\nhas no abstract in the returned XML; it is retained transparently. The extractor\nproduced **527 mention rows**, **164 distinct document–entity pairs**, and\n**20 distinct canonical entities**.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Human-labelled evaluation sample: not done. Independent human review and inter-annotator agreement: not done. The implementing assistant also authored labels, so evaluator dependence and annotation bias remain. The artifact-level deliverables (extraction table, accuracy calculation, figures and write-up) are present, but the human-annotation part of the original scope is not fulfilled.",
@@ -384,7 +565,8 @@
           "text": "The committed run covers chromosome 1, positions 66,926–939,279 (1-based), and produced 300 annotated rows from 300 unique input alleles. All 300/300 matched the local snapshot; 0 were unmatched. There are 0 missing gene annotations and 3 missing molecular-consequence annotations.",
           "start": 87,
           "end": 90,
-          "raw": "The committed run covers chromosome 1, positions **66,926–939,279** (1-based),\nand produced **300 annotated rows from 300 unique input alleles**. All **300/300**\nmatched the local snapshot; **0** were unmatched. There are **0** missing gene\nannotations and **3** missing molecular-consequence annotations."
+          "raw": "The committed run covers chromosome 1, positions **66,926–939,279** (1-based),\nand produced **300 annotated rows from 300 unique input alleles**. All **300/300**\nmatched the local snapshot; **0** were unmatched. There are **0** missing gene\nannotations and **3** missing molecular-consequence annotations.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Not done: VEP/SnpEff execution or de novo transcript consequence prediction. Molecular consequences and gene labels are copied from the bundled ClinVar resource.",
@@ -417,7 +599,8 @@
           "text": "The topology agrees with 2 of 3 sampled order splits. Carnivora is not an exclusive group in this tree; this is retained as a negative result.",
           "start": 44,
           "end": 45,
-          "raw": "The topology agrees with **2 of 3** sampled order splits. Carnivora is not an\nexclusive group in this tree; this is retained as a negative result."
+          "raw": "The topology agrees with **2 of 3** sampled order splits. Carnivora is not an\nexclusive group in this tree; this is retained as a negative result.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "This is a single mitochondrial protein and a deliberately small sample. It is not a species-tree estimate, and order-level agreement does not imply correct relationships within an order.",
@@ -450,7 +633,8 @@
           "text": "Intervals are two-sided paired t intervals with Bonferroni correction across three endpoints (per-interval confidence 98.3333%, family alpha 0.05). The predeclared practical threshold is 5% relative MAE reduction or 0.02 absolute AP increase, alongside an interval strictly above zero. The evidence supports 0/3 endpoint-level improvement claims. This is insufficient evidence of benefit, rather than proof that the approaches are equivalent.",
           "start": 57,
           "end": 62,
-          "raw": "Intervals are two-sided paired t intervals with Bonferroni correction across\nthree endpoints (per-interval confidence 98.3333%, family alpha 0.05).\nThe predeclared practical threshold is 5% relative MAE reduction or 0.02 absolute\nAP increase, alongside an interval strictly above zero. The evidence supports\n0/3 endpoint-level improvement claims. This is insufficient\nevidence of benefit, rather than proof that the approaches are equivalent."
+          "raw": "Intervals are two-sided paired t intervals with Bonferroni correction across\nthree endpoints (per-interval confidence 98.3333%, family alpha 0.05).\nThe predeclared practical threshold is 5% relative MAE reduction or 0.02 absolute\nAP increase, alongside an interval strictly above zero. The evidence supports\n0/3 endpoint-level improvement claims. This is insufficient\nevidence of benefit, rather than proof that the approaches are equivalent.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Repeated scaffold splits / split-level uncertainty: not done. Seed intervals describe training randomness conditional on one split. Five differences provide limited support for the t approximation.",
@@ -483,7 +667,8 @@
           "text": "Scores are macro averages over 12 held-out images containing 392 reference nuclei, evaluated at native resolution.",
           "start": 44,
           "end": 45,
-          "raw": "Scores are macro averages over **12 held-out images containing\n392 reference nuclei**, evaluated at native resolution."
+          "raw": "Scores are macro averages over **12 held-out images containing\n392 reference nuclei**, evaluated at native resolution.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Whole-cell membrane/cytoplasm segmentation: not done. Labels are nuclei.",
@@ -516,7 +701,8 @@
           "text": "PERMANOVA attributes 45.84% of distance variation to body-site grouping in the complete-visit subset. The exact restricted test is not significant at 0.05; the small independent subject count limits inference. Alpha tests also do not pass the threshold after correction. The dispersion diagnostic does not reject, which is not proof of equal dispersion.",
           "start": 32,
           "end": 32,
-          "raw": "PERMANOVA attributes **45.84%** of distance variation to body-site grouping in the complete-visit subset. The exact restricted test is not significant at 0.05; the small independent subject count limits inference. Alpha tests also do not pass the threshold after correction. The dispersion diagnostic does not reject, which is not proof of equal dispersion."
+          "raw": "PERMANOVA attributes **45.84%** of distance variation to body-site grouping in the complete-visit subset. The exact restricted test is not significant at 0.05; the small independent subject count limits inference. Alpha tests also do not pass the threshold after correction. The dispersion diagnostic does not reject, which is not proof of equal dispersion.",
+          "heading": "Results"
         },
         "limitations": {
           "text": "Only 2 independent participants; repeated visits do not increase independent biological replication. Whole-trajectory exchangeability is an assumption, not a randomized design. Exact p-values have a coarse reference distribution. No population-level or causal conclusion is supported.",
@@ -528,6 +714,108 @@
       "commit": "57e4ab9757c0d8f0859513b4747576b8def2fc60",
       "readme_sha256": "1319a63491fe53b8dd7a679c70d2206fd0d185102b43bddcb1e10fa11a012e79",
       "url": "https://github.com/Akkaya-Furkan/16s-microbiome-diversity/blob/57e4ab9757c0d8f0859513b4747576b8def2fc60/README.md"
+    },
+    {
+      "id": "P28",
+      "repo": "quarto-report-generator",
+      "fields": {
+        "title": {
+          "text": "Parameterised measurement reports with Quarto",
+          "start": 1,
+          "end": 1,
+          "raw": "# Parameterised measurement reports with Quarto"
+        },
+        "question": {
+          "text": "Can a validated measurement CSV become a reproducible, parameterised report with one command?",
+          "start": 5,
+          "end": 5,
+          "raw": "Can a validated measurement CSV become a reproducible, parameterised report with one command?"
+        },
+        "results": {
+          "text": "The deterministic example contains 30 synthetic observations. The committed reference report and comparison report each select 15 observations and contain 5 dose summaries. Download an HTML file and open it locally; GitHub's file viewer displays source. Each report has a companion JSON file in the same directory. The committed reference PDF and JSON sidecar select 15 observations across 5 doses. Local pdfinfo measured 2 A4 pages and 47,586 bytes, produced by Typst 0.15.1; both pages were rendered to PNG and visually inspected. PDF bytes can vary with creation metadata and platform fonts.",
+          "start": 51,
+          "end": 51,
+          "raw": "The deterministic example contains 30 synthetic observations. The committed [reference report](examples/reports/reference.html) and [comparison report](examples/reports/comparison.html) each select 15 observations and contain 5 dose summaries. Download an HTML file and open it locally; GitHub's file viewer displays source. Each report has a companion JSON file in the same directory. The committed [reference PDF](examples/reports/reference-pdf.pdf) and [JSON sidecar](examples/reports/reference-pdf.json) select 15 observations across 5 doses. Local `pdfinfo` measured **2 A4 pages and 47,586 bytes**, produced by Typst 0.15.1; both pages were rendered to PNG and visually inspected. PDF bytes can vary with creation metadata and platform fonts.",
+          "heading": "Results"
+        },
+        "limitations": {
+          "text": "This is descriptive reporting with arbitrary units. It performs no curve fitting, hypothesis testing, confidence interval calculation, or potency estimation. Error bars show sample standard deviation. A singleton has undefined SD and is displayed as NA. Values shown in the report are rounded; JSON retains numerical precision. The CSV fingerprint identifies the input bytes but does not establish experimental provenance. Finite inputs whose statistics overflow are rejected. The environment is pinned for Python 3.11 on Linux; HTML and Typst PDF rendering were validated locally on Linux; other platforms have not been validated. The XeLaTeX/TinyTeX route is not implemented or tested. The report/sidecar pair is rolled back on ordinary write failures but is not a crash-atomic multi-file transaction. Very large input files and interactive dashboards are outside scope.",
+          "start": 66,
+          "end": 66,
+          "raw": "This is descriptive reporting with arbitrary units. It performs no curve fitting, hypothesis testing, confidence interval calculation, or potency estimation. Error bars show sample standard deviation. A singleton has undefined SD and is displayed as NA. Values shown in the report are rounded; JSON retains numerical precision. The CSV fingerprint identifies the input bytes but does not establish experimental provenance. Finite inputs whose statistics overflow are rejected. The environment is pinned for Python 3.11 on Linux; HTML and Typst PDF rendering were validated locally on Linux; other platforms have not been validated. The XeLaTeX/TinyTeX route is not implemented or tested. The report/sidecar pair is rolled back on ordinary write failures but is not a crash-atomic multi-file transaction. Very large input files and interactive dashboards are outside scope."
+        }
+      },
+      "commit": "9c255110a46a7b98eecbcd01914be15b9d23d1a0",
+      "readme_sha256": "386f1c1eedbbe6133bea7022e6a4e1ebad4908137701f8e4418ae3ba22a5b041",
+      "url": "https://github.com/Akkaya-Furkan/quarto-report-generator/blob/9c255110a46a7b98eecbcd01914be15b9d23d1a0/README.md"
+    },
+    {
+      "id": "P29",
+      "repo": "binding-pocket-conservation",
+      "fields": {
+        "title": {
+          "text": "Binding-pocket conservation across a protein family",
+          "start": 1,
+          "end": 1,
+          "raw": "# Binding-pocket conservation across a protein family"
+        },
+        "results": {
+          "text": "All 257/257 resolved canonical residues mapped once and passed the coverage filter.",
+          "start": 17,
+          "end": 17,
+          "raw": "All **257/257** resolved canonical residues mapped once and passed the coverage filter.",
+          "heading": "Results"
+        },
+        "limitations": {
+          "text": "Eight reviewed sequences are a small convenience sample, unevenly distributed across vertebrates. Orthology is inferred from reviewed CA2 annotations rather than reconstructed gene trees. Phylogenetic weighting/correction: not done. Related sequences and spatially dependent residues violate simple independence/exchangeability assumptions; the p-value is an exploratory conditional comparison.",
+          "start": 65,
+          "end": 65,
+          "raw": "- Eight reviewed sequences are a small convenience sample, unevenly distributed across vertebrates. Orthology is inferred from reviewed CA2 annotations rather than reconstructed gene trees. Phylogenetic weighting/correction: **not done**. Related sequences and spatially dependent residues violate simple independence/exchangeability assumptions; the p-value is an exploratory conditional comparison."
+        },
+        "question": {
+          "text": "Are ligand-contacting residues more conserved than other residues in a protein family? In this focused case study of vertebrate carbonic anhydrase II (CA2), the acetazolamide-contacting pocket is more conserved than the other resolved residues of the human reference structure.",
+          "start": 3,
+          "end": 3,
+          "raw": "Are ligand-contacting residues more conserved than other residues in a protein family? In this focused case study of **vertebrate carbonic anhydrase II (CA2)**, the acetazolamide-contacting pocket is more conserved than the other resolved residues of the human reference structure."
+        }
+      },
+      "commit": "bb49cc84e3e27b4233d8b7d2752516af407f4ba6",
+      "readme_sha256": "018e421cc06d9e91e245f125eccb08e8fd71e434aa6c38076ff1445af348bf09",
+      "url": "https://github.com/Akkaya-Furkan/binding-pocket-conservation/blob/bb49cc84e3e27b4233d8b7d2752516af407f4ba6/README.md"
+    },
+    {
+      "id": "P30",
+      "repo": "survival-analysis",
+      "fields": {
+        "title": {
+          "text": "Survival analysis — Kaplan–Meier and Cox",
+          "start": 1,
+          "end": 1,
+          "raw": "# Survival analysis — Kaplan–Meier and Cox"
+        },
+        "question": {
+          "text": "How does observed survival differ by recorded sex, and how are age, sex and physician-rated ECOG performance associated with mortality after mutual adjustment?",
+          "start": 9,
+          "end": 10,
+          "raw": "How does observed survival differ by recorded sex, and how are age, sex and\nphysician-rated ECOG performance associated with mortality after mutual adjustment?"
+        },
+        "results": {
+          "text": "Median KM survival was 270 days for male patients and 426 days for female patients. The unadjusted log-rank statistic was 10.008174 (1 degree of freedom), p=0.00155847.",
+          "start": 59,
+          "end": 61,
+          "raw": "Median KM survival was **270 days for male patients and 426 days for female\npatients**. The unadjusted log-rank statistic was **10.008174** (1 degree of\nfreedom), **p=0.00155847**.",
+          "heading": "Results"
+        },
+        "limitations": {
+          "text": "Historical observational advanced lung cancer cohort; generalization and unmeasured confounding limit interpretation. Sex is the dataset's recorded binary variable; no treatment effect is estimated.",
+          "start": 143,
+          "end": 145,
+          "raw": "- Historical observational advanced lung cancer cohort; generalization and\n  unmeasured confounding limit interpretation. Sex is the dataset's recorded\n  binary variable; no treatment effect is estimated."
+        }
+      },
+      "commit": "74adba25b0a20d10930f69f28bba8c9c59b7db9d",
+      "readme_sha256": "370ff6bab078d2d1749fdc01973955eda0ac5b8660d3940c8b2d66ad53c8ab00",
+      "url": "https://github.com/Akkaya-Furkan/survival-analysis/blob/74adba25b0a20d10930f69f28bba8c9c59b7db9d/README.md"
     }
   ],
   "audit": [
@@ -540,8 +828,8 @@
     {
       "id": "P02",
       "repo": "egfr-mmgbsa",
-      "included": false,
-      "reason": "Planned status"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P03",
@@ -553,43 +841,43 @@
       "id": "P04",
       "repo": "nf-virtual-screening",
       "included": false,
-      "reason": "Planned status"
+      "reason": "README front matter says work is not done or does not yet answer the question"
     },
     {
       "id": "P05",
       "repo": "target-prioritization-network",
-      "included": false,
-      "reason": "Planned status"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P06",
       "repo": "md-trajectory-viewer",
       "included": false,
-      "reason": "Missing evidence section: results, limitations"
+      "reason": "Missing evidence section: limitations"
     },
     {
       "id": "P07",
       "repo": "bio-lookup-api",
-      "included": false,
-      "reason": "Missing evidence section: results"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P08",
       "repo": "ligprep-cli",
-      "included": false,
-      "reason": "Missing evidence section: results"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P09",
       "repo": "openaq-pipeline",
       "included": false,
-      "reason": "Missing evidence section: results, limitations"
+      "reason": "Missing evidence section: limitations"
     },
     {
       "id": "P10",
       "repo": "service-health-dashboard",
-      "included": false,
-      "reason": "Missing evidence section: results"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P11",
@@ -696,20 +984,20 @@
     {
       "id": "P28",
       "repo": "quarto-report-generator",
-      "included": false,
-      "reason": "Planned status"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P29",
       "repo": "binding-pocket-conservation",
-      "included": false,
-      "reason": "Planned status"
+      "included": true,
+      "reason": "README question, results and limitations present"
     },
     {
       "id": "P30",
       "repo": "survival-analysis",
-      "included": false,
-      "reason": "Planned status"
+      "included": true,
+      "reason": "README question, results and limitations present"
     }
   ]
 }

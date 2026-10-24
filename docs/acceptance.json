@@ -1,10 +1,10 @@
 {
   "expected_inventory": 30,
   "actual_inventory": 30,
-  "expected_cards": 16,
-  "actual_cards": 16,
-  "expected_html_pages": 17,
-  "actual_html_pages": 17,
+  "expected_cards": 24,
+  "actual_cards": 24,
+  "expected_html_pages": 25,
+  "actual_html_pages": 25,
   "expected_screenshots": 2,
   "actual_screenshots": 2,
   "contrast_checks": [

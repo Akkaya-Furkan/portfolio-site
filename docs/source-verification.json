@@ -1,8 +1,14 @@
 {
-  "checked_at": "2026-10-24T13:56:48.429275+00:00",
-  "expected": 16,
-  "verified": 16,
+  "checked_at": "2026-10-24T15:35:07.994579+00:00",
+  "expected": 24,
+  "verified": 24,
   "checks": [
+    {
+      "repo": "egfr-mmgbsa",
+      "url": "https://github.com/Akkaya-Furkan/egfr-mmgbsa/blob/7d8798fd2d8f3d36288982cd422a4b4e0c64356e/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
     {
       "repo": "herg-cardiotox-classifier",
       "url": "https://github.com/Akkaya-Furkan/herg-cardiotox-classifier/blob/a89ec78aca99acece4a520e363a8b39c26b37519/README.md",
@@ -10,8 +16,32 @@
       "excerpts_match": true
     },
     {
+      "repo": "target-prioritization-network",
+      "url": "https://github.com/Akkaya-Furkan/target-prioritization-network/blob/64ca1e87035bf299d494831c6bc9d97b81791f6c/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "bio-lookup-api",
+      "url": "https://github.com/Akkaya-Furkan/bio-lookup-api/blob/3093b549cfaf40e1c0bf4eb3817a98efa4262441/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "ligprep-cli",
+      "url": "https://github.com/Akkaya-Furkan/ligprep-cli/blob/7930ed9f4e3612de6178715f7a9756d93ebac6a9/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "service-health-dashboard",
+      "url": "https://github.com/Akkaya-Furkan/service-health-dashboard/blob/f0d9c89a4405eb2b26bb5799c1e036eeab6313a6/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
       "repo": "rnaseq-de-reproduction",
-      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/a9e9bbcbfa3b177139fbb6bfa50c5198592f8457/README.md",
+      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/2d510f1548e297cddc343ee1e54312df2d91b62a/README.md",
       "sha256_match": true,
       "excerpts_match": true
     },
@@ -23,7 +53,7 @@
     },
     {
       "repo": "plddt-calibration",
-      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/c6cad927f15a993a0eda55f8dd48544cc12e8416/README.md",
+      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/b28512666654f22550491977a693d4928f11e194/README.md",
       "sha256_match": true,
       "excerpts_match": true
     },
@@ -41,7 +71,7 @@
     },
     {
       "repo": "amp-classifier",
-      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4/README.md",
+      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/7ea6c0bf87fd932c2b0289066ae7bf074b871d55/README.md",
       "sha256_match": true,
       "excerpts_match": true
     },
@@ -96,6 +126,24 @@
     {
       "repo": "16s-microbiome-diversity",
       "url": "https://github.com/Akkaya-Furkan/16s-microbiome-diversity/blob/57e4ab9757c0d8f0859513b4747576b8def2fc60/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "quarto-report-generator",
+      "url": "https://github.com/Akkaya-Furkan/quarto-report-generator/blob/9c255110a46a7b98eecbcd01914be15b9d23d1a0/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "binding-pocket-conservation",
+      "url": "https://github.com/Akkaya-Furkan/binding-pocket-conservation/blob/bb49cc84e3e27b4233d8b7d2752516af407f4ba6/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "survival-analysis",
+      "url": "https://github.com/Akkaya-Furkan/survival-analysis/blob/74adba25b0a20d10930f69f28bba8c9c59b7db9d/README.md",
       "sha256_match": true,
       "excerpts_match": true
     }

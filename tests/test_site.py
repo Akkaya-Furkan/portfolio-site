@@ -186,3 +186,46 @@ def test_ci_cache_targets_installed_requirements():
     requirements = match.group(1)
     assert (ROOT/requirements).is_file()
     assert f'pip install -r {requirements}' in text
+
+
+def test_exclusions_are_recorded_with_reasons():
+    excluded = {a['repo']: a['reason'] for a in DATA['audit'] if not a['included']}
+    assert len(excluded) + len(DATA['projects']) == 30
+    # Unfinished or evidence-poor repositories stay out, each for a stated reason.
+    for repo in ('nf-virtual-screening', 'egfr-resistance-docking', 'md-trajectory-viewer', 'openaq-pipeline'):
+        assert repo in excluded, repo
+    assert 'not done' in excluded['nf-virtual-screening']
+
+
+def test_every_card_links_to_a_pinned_readme(built):
+    doc = Document((built/'index.html').read_text())
+    readme_links = [h for h in doc.links if h.startswith('https://github.com/')]
+    assert len(readme_links) == len(DATA['projects'])
+    assert all(re.fullmatch(r'https://github\.com/Akkaya-Furkan/[\w.-]+/blob/[0-9a-f]{40}/README\.md', h) for h in readme_links)
+
+
+def test_index_count_matches_data(built):
+    text = (built/'index.html').read_text()
+    assert f"{len(DATA['projects']):02} source-backed projects" in text
+
+
+def test_front_matter_not_done_is_excluded():
+    text = '# Tool\n\n**Question.** Does it work?\n\n**Status.** Day 1 of 2; metrics are **not done**.\n\n## Results\n3 runs.\n\n## Limitations\nSmall.\n'
+    assert builder.extract(text)[0] is None
+
+
+def test_code_project_uses_status_but_needs_limitations():
+    base = '# CLI\n\n**Question.** Can it convert?\n\n## Status\nv0.1.0: 12 tests pass.\nPart of a 30-project portfolio.\n\n'
+    fields, _ = builder.extract(base + '## Limitations\nOne format only.\n')
+    assert fields['results']['text'] == 'v0.1.0: 12 tests pass.'
+    assert builder.extract(base)[0] is None
+
+
+def test_footnotes_and_italic_notes_are_not_results():
+    text = '# T\n\n**Question.** Q?\n\n## Result in brief\n| a |\n|---|\n| 1 |\n\n\\* 6LUD also carries 3 mutations.\n\n*Note 4 caveat.*\n\n* **T790M first.** Gap of 15 kcal/mol.\n\n## Limitations\nSmall.\n'
+    assert builder.extract(text)[0]['results']['text'] == 'T790M first. Gap of 15 kcal/mol.'
+
+
+def test_no_private_infrastructure_or_thesis_terms(built):
+    for path in built.glob('*.html'):
+        assert not re.search(r'(?i)fedora-ev|\bthesis\b|homelab|192\.168|tailscale', path.read_text()), path.name
