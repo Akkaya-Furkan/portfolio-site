@@ -177,3 +177,12 @@ def test_refresh_removes_stale_generated_pages(built):
     builder.build(DATA, built)
     assert not stale.exists()
     assert len(list(built.glob('*.html'))) == len(DATA['projects']) + 1
+
+
+def test_ci_cache_targets_installed_requirements():
+    text = (ROOT/'.github/workflows/ci.yml').read_text()
+    match = re.search(r'cache-dependency-path: (\S+)', text)
+    assert match
+    requirements = match.group(1)
+    assert (ROOT/requirements).is_file()
+    assert f'pip install -r {requirements}' in text

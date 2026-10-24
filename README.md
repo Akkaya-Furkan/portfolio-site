@@ -35,7 +35,7 @@ repositories**, with **14 excluded** and **17 generated HTML pages**. Authentica
 GitHub reads verified **16/16 pinned README hashes and excerpt sets**; the
 [verification record](docs/source-verification.json) stores the checked URLs and time.
 
-- **33/33 pytest cases passed**: source attribution, selection boundaries,
+- **34/34 pytest cases passed**: source attribution, selection boundaries,
   HTML structure, escaping, local links and fragments, stale-page removal,
   deterministic regeneration and the disabled deployment gate.
 - Chromium rendered **17 pages × 2 viewports = 34 checks**, at **390 px** and
