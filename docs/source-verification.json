@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-10-24T13:56:48.429275+00:00",
+  "expected": 16,
+  "verified": 16,
+  "checks": [
+    {
+      "repo": "herg-cardiotox-classifier",
+      "url": "https://github.com/Akkaya-Furkan/herg-cardiotox-classifier/blob/a89ec78aca99acece4a520e363a8b39c26b37519/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "rnaseq-de-reproduction",
+      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/a9e9bbcbfa3b177139fbb6bfa50c5198592f8457/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "scrnaseq-pbmc-annotation",
+      "url": "https://github.com/Akkaya-Furkan/scrnaseq-pbmc-annotation/blob/491ef5114a00f7afcbf8ef94a9c61136da8e3aa3/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "plddt-calibration",
+      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/c6cad927f15a993a0eda55f8dd48544cc12e8416/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "dose-response-toolkit",
+      "url": "https://github.com/Akkaya-Furkan/dose-response-toolkit/blob/0a90418187662bb132328efacf7277dfbb892639/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "ecoli-fba-knockout",
+      "url": "https://github.com/Akkaya-Furkan/ecoli-fba-knockout/blob/80f302d0529e6a474535eab4d4c492ca482b7a20/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "amp-classifier",
+      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "proteomics-differential-abundance",
+      "url": "https://github.com/Akkaya-Furkan/proteomics-differential-abundance/blob/c3ead3b3eff3632d5e2dff121237fde92d77e84a/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "compute-job-queue",
+      "url": "https://github.com/Akkaya-Furkan/compute-job-queue/blob/eb8aa0895e26080c3e0cfa36a6d87a255abc5e9d/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "lab-experiment-log",
+      "url": "https://github.com/Akkaya-Furkan/lab-experiment-log/blob/53bba3b3ee574e8edc32a0a8f4912224c1eca4ec/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "pubmed-entity-mining",
+      "url": "https://github.com/Akkaya-Furkan/pubmed-entity-mining/blob/f18a03c1ef0af914a90268385f68a9a96fb9e480/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "variant-annotation-pipeline",
+      "url": "https://github.com/Akkaya-Furkan/variant-annotation-pipeline/blob/ebb5cdef1fabe9878ba876ae2c60f61d9bd87d7d/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "protein-phylogenetics",
+      "url": "https://github.com/Akkaya-Furkan/protein-phylogenetics/blob/ad73ba23ee6b10996355b122eba6f769552026e6/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "admet-multitask",
+      "url": "https://github.com/Akkaya-Furkan/admet-multitask/blob/45d4a0ec97b886afc5a7a79ef444aba5312af2fa/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "cell-image-segmentation",
+      "url": "https://github.com/Akkaya-Furkan/cell-image-segmentation/blob/57b501f19450830b0667efe5ab25df766d73e1dd/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    },
+    {
+      "repo": "16s-microbiome-diversity",
+      "url": "https://github.com/Akkaya-Furkan/16s-microbiome-diversity/blob/57e4ab9757c0d8f0859513b4747576b8def2fc60/README.md",
+      "sha256_match": true,
+      "excerpts_match": true
+    }
+  ]
+}

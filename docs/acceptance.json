@@ -1,0 +1,55 @@
+{
+  "expected_inventory": 30,
+  "actual_inventory": 30,
+  "expected_cards": 16,
+  "actual_cards": 16,
+  "expected_html_pages": 17,
+  "actual_html_pages": 17,
+  "expected_screenshots": 2,
+  "actual_screenshots": 2,
+  "contrast_checks": [
+    {
+      "foreground": "#182d30",
+      "background": "#f6f7f2",
+      "ratio": 13.388,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "#4f6568",
+      "background": "#f6f7f2",
+      "ratio": 5.747,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "#146451",
+      "background": "#f6f7f2",
+      "ratio": 6.564,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "#4f6568",
+      "background": "#ffffff",
+      "ratio": 6.188,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "#146451",
+      "background": "#ffffff",
+      "ratio": 7.067,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#182d30",
+      "ratio": 14.414,
+      "minimum": 4.5,
+      "passed": true
+    }
+  ],
+  "manual_review": "The two axe incomplete instances concern the decorative aria-hidden down arrow. Its white-on-dark button palette exceeds 4.5:1. Desktop and mobile viewport screenshots were inspected; full screen-reader and WCAG audits were not performed."
+}

@@ -1,0 +1,12 @@
+[
+"egfr-resistance-docking", "egfr-mmgbsa", "herg-cardiotox-classifier",
+"nf-virtual-screening", "target-prioritization-network", "md-trajectory-viewer",
+"bio-lookup-api", "ligprep-cli", "openaq-pipeline", "service-health-dashboard",
+"rnaseq-de-reproduction", "scrnaseq-pbmc-annotation", "plddt-calibration",
+"dose-response-toolkit", "ecoli-fba-knockout", "amp-classifier",
+"proteomics-differential-abundance", "compute-job-queue", "lab-experiment-log",
+"pubmed-entity-mining", "variant-annotation-pipeline", "protein-phylogenetics",
+"egfr-umbrella-sampling", "admet-multitask", "cell-image-segmentation",
+"16s-microbiome-diversity", "portfolio-site", "quarto-report-generator",
+"binding-pocket-conservation", "survival-analysis"
+]

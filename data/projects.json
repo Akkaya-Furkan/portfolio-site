@@ -1,0 +1,715 @@
+{
+  "schema": 1,
+  "projects": [
+    {
+      "id": "P03",
+      "repo": "herg-cardiotox-classifier",
+      "fields": {
+        "title": {
+          "text": "hERG cardiotoxicity classifier",
+          "start": 1,
+          "end": 1,
+          "raw": "# hERG cardiotoxicity classifier"
+        },
+        "limitations": {
+          "text": "ChEMBL assays are heterogeneous (cell lines, protocols); label noise caps performance.",
+          "start": 20,
+          "end": 20,
+          "raw": "- ChEMBL assays are heterogeneous (cell lines, protocols); label noise caps performance."
+        },
+        "results": {
+          "text": "Held-out test set, 1,275 compounds (75% blockers). The scaffold split shares no Bemis–Murcko scaffold between train and test; it is the honest number.",
+          "start": 24,
+          "end": 24,
+          "raw": "Held-out test set, 1,275 compounds (75% blockers). The scaffold split shares no Bemis–Murcko scaffold between train and test; it is the honest number."
+        },
+        "question": {
+          "text": "Can hERG channel blockade be predicted from structure early in discovery?",
+          "start": 3,
+          "end": 3,
+          "raw": "**Question.** Can hERG channel blockade be predicted from structure early in discovery?"
+        }
+      },
+      "commit": "a89ec78aca99acece4a520e363a8b39c26b37519",
+      "readme_sha256": "78d005faf5dd5d22dea973ad8c0bec9dfca6b6700496b0b9b0a9dfb3952a51f1",
+      "url": "https://github.com/Akkaya-Furkan/herg-cardiotox-classifier/blob/a89ec78aca99acece4a520e363a8b39c26b37519/README.md"
+    },
+    {
+      "id": "P11",
+      "repo": "rnaseq-de-reproduction",
+      "fields": {
+        "title": {
+          "text": "RNA-seq differential expression — reproducing a published study",
+          "start": 1,
+          "end": 1,
+          "raw": "# RNA-seq differential expression — reproducing a published study"
+        },
+        "question": {
+          "text": "Can the differentially expressed genes reported for GSE52778 (dexamethasone vs untreated) be reproduced with an independent pipeline, and how close are the gene sets and gene rankings?",
+          "start": 9,
+          "end": 10,
+          "raw": "Can the differentially expressed genes reported for GSE52778 (dexamethasone vs untreated) be reproduced\nwith an independent pipeline, and how close are the gene sets and gene rankings?"
+        },
+        "results": {
+          "text": "Recovery. 301 of the 302 published significant genes in the common universe are also significant in pyDESeq2 (99.7%), all 301 in the same direction. The only miss is RASD1 (published q = 0.016). 14 published significant genes are not tested by pyDESeq2 (symbol mismatch or filtered).",
+          "start": 51,
+          "end": 53,
+          "raw": "* **Recovery.** 301 of the 302 published significant genes in the common universe are also significant in\n  pyDESeq2 (99.7%), all 301 in the same direction. The only miss is RASD1 (published q = 0.016).\n  14 published significant genes are not tested by pyDESeq2 (symbol mismatch or filtered)."
+        },
+        "limitations": {
+          "text": "The original Cuffdiff run (version, annotation, exact sample grouping, pooling of replicates) is not documented in the deposited table; differences are reported as method differences. Whether the table pools only dexamethasone-alone samples or also the albuterol groups is not stated and was not determined.",
+          "start": 87,
+          "end": 89,
+          "raw": "* The original Cuffdiff run (version, annotation, exact sample grouping, pooling of replicates) is not documented in the\n  deposited table; differences are reported as method differences. Whether the table pools only dexamethasone-alone\n  samples or also the albuterol groups is not stated and was not determined."
+        }
+      },
+      "commit": "a9e9bbcbfa3b177139fbb6bfa50c5198592f8457",
+      "readme_sha256": "b80d04c2ea984423f7a8933b5741386a3d41f505fbe0e10f7d3f225cebfa856c",
+      "url": "https://github.com/Akkaya-Furkan/rnaseq-de-reproduction/blob/a9e9bbcbfa3b177139fbb6bfa50c5198592f8457/README.md"
+    },
+    {
+      "id": "P12",
+      "repo": "scrnaseq-pbmc-annotation",
+      "fields": {
+        "title": {
+          "text": "Single-cell RNA-seq: PBMC cell-type annotation",
+          "start": 1,
+          "end": 1,
+          "raw": "# Single-cell RNA-seq: PBMC cell-type annotation"
+        },
+        "question": {
+          "text": "Which broad cell types do clusters in a public healthy-donor PBMC dataset represent, and how consistent are independent marker-based assignments with CellTypist predictions?",
+          "start": 5,
+          "end": 6,
+          "raw": "Which broad cell types do clusters in a public healthy-donor PBMC dataset represent,\nand how consistent are independent marker-based assignments with CellTypist predictions?"
+        },
+        "results": {
+          "text": "QC retained 2,612/2,700 cells and removed 88.",
+          "start": 52,
+          "end": 52,
+          "raw": "- QC retained **2,612/2,700 cells** and removed **88**."
+        },
+        "limitations": {
+          "text": "Reference-label accuracy, external validation and donor generalization: not done. This is one healthy-donor dataset; CellTypist is another inferred annotation, and overlap with the pretrained model's training sources has not been audited.",
+          "start": 135,
+          "end": 137,
+          "raw": "- Reference-label accuracy, external validation and donor generalization: **not done**.\n  This is one healthy-donor dataset; CellTypist is another inferred annotation,\n  and overlap with the pretrained model's training sources has not been audited."
+        }
+      },
+      "commit": "491ef5114a00f7afcbf8ef94a9c61136da8e3aa3",
+      "readme_sha256": "ddb331023aa041d32cf3bfc7252ea3025d70fec211abab1cb54438a908f006f4",
+      "url": "https://github.com/Akkaya-Furkan/scrnaseq-pbmc-annotation/blob/491ef5114a00f7afcbf8ef94a9c61136da8e3aa3/README.md"
+    },
+    {
+      "id": "P13",
+      "repo": "plddt-calibration",
+      "fields": {
+        "title": {
+          "text": "How well does pLDDT predict structural accuracy?",
+          "start": 1,
+          "end": 1,
+          "raw": "# How well does pLDDT predict structural accuracy?"
+        },
+        "results": {
+          "text": "Both predictors are close to the diagonal: ECE = 0.016 (95 % CI 0.013–0.022; 36,467 residues) for ESMFold and 0.012 (0.004–0.024; 30,196 residues) for AlphaFold DB.",
+          "start": 44,
+          "end": 44,
+          "raw": "- Both predictors are close to the diagonal: ECE = **0.016** (95 % CI 0.013–0.022; 36,467 residues) for ESMFold and **0.012** (0.004–0.024; 30,196 residues) for AlphaFold DB."
+        },
+        "limitations": {
+          "text": "Accuracy reference is a single crystal structure. lDDT against one X-ray model penalises genuine flexibility and crystal-packing differences; lDDT is computed on Cα atoms only (not all-atom lDDT), residues are scored equally rather than contact-weighted, and chains were evaluated alone (no ligand, partner or oligomer context).",
+          "start": 74,
+          "end": 76,
+          "raw": "- **Accuracy reference is a single crystal structure.** lDDT against one X-ray model penalises genuine flexibility and\n  crystal-packing differences; lDDT is computed on Cα atoms only (not all-atom lDDT), residues are scored equally\n  rather than contact-weighted, and chains were evaluated alone (no ligand, partner or oligomer context)."
+        },
+        "question": {
+          "text": "pLDDT is the per-residue confidence reported by AlphaFold and ESMFold. Does it track the actual accuracy of a model against an experimental structure, i.e. is it calibrated (a residue with pLDDT 80 is ~0.80 correct)? Does that hold for structures the predictors could not have seen, and for regions that are disordered?",
+          "start": 3,
+          "end": 5,
+          "raw": "**Question.** pLDDT is the per-residue confidence reported by AlphaFold and ESMFold. Does it track the *actual* accuracy\nof a model against an experimental structure, i.e. is it **calibrated** (a residue with pLDDT 80 is ~0.80 correct)?\nDoes that hold for structures the predictors could not have seen, and for regions that are disordered?"
+        }
+      },
+      "commit": "c6cad927f15a993a0eda55f8dd48544cc12e8416",
+      "readme_sha256": "3fdb9ab1f02b60960127413c67ea4f6999cf86bc319d05e232c78baca646cd28",
+      "url": "https://github.com/Akkaya-Furkan/plddt-calibration/blob/c6cad927f15a993a0eda55f8dd48544cc12e8416/README.md"
+    },
+    {
+      "id": "P14",
+      "repo": "dose-response-toolkit",
+      "fields": {
+        "title": {
+          "text": "Dose–response toolkit — how reliable is an IC50?",
+          "start": 1,
+          "end": 1,
+          "raw": "# Dose–response toolkit — how reliable is an IC50?"
+        },
+        "question": {
+          "text": "How reliable are IC50 estimates from 4PL fits — in particular, how often is a reported interval right, and when should the number not be reported at all?",
+          "start": 10,
+          "end": 11,
+          "raw": "How reliable are IC50 estimates from 4PL fits — in particular, how often is a reported\ninterval right, and when should the number not be reported at all?"
+        },
+        "results": {
+          "text": "With the IC50 well inside the range, the median error is ≈0 and RMSE ≈ 0.09 log10 (≈ 23%); the nominal 95% interval covered the truth in about 90–91% of the datasets that were reported — slightly anti-conservative.",
+          "start": 56,
+          "end": 56,
+          "raw": "* With the IC50 well inside the range, the median error is ≈0 and RMSE ≈ 0.09 log10 (≈ 23%); the nominal 95% interval covered the truth in about 90–91% of the datasets that were reported — **slightly anti-conservative**."
+        },
+        "limitations": {
+          "text": "Not done: no hierarchical / replicate-level error model; no outlier removal; no Bayesian intervals; no multiple-testing treatment across a plate; no 3-parameter (fixed-slope) or biphasic models; no global fits across plates.",
+          "start": 77,
+          "end": 77,
+          "raw": "* **Not done:** no hierarchical / replicate-level error model; no outlier removal; no Bayesian intervals; no multiple-testing treatment across a plate; no 3-parameter (fixed-slope) or biphasic models; no global fits across plates."
+        }
+      },
+      "commit": "0a90418187662bb132328efacf7277dfbb892639",
+      "readme_sha256": "1b85dd154da79ede15519cf323d221e4c5c1cfde43535d376fabfe5c3e91622a",
+      "url": "https://github.com/Akkaya-Furkan/dose-response-toolkit/blob/0a90418187662bb132328efacf7277dfbb892639/README.md"
+    },
+    {
+      "id": "P15",
+      "repo": "ecoli-fba-knockout",
+      "fields": {
+        "title": {
+          "text": "E. coli single-gene knockout screen",
+          "start": 1,
+          "end": 1,
+          "raw": "# E. coli single-gene knockout screen"
+        },
+        "question": {
+          "text": "Which single-gene deletions prevent growth in the E. coli core metabolic model, and how well does genome-scale iJO1366 essentiality agree with Keio knockout phenotypes on aerobic glucose minimal medium?",
+          "start": 5,
+          "end": 5,
+          "raw": "Which single-gene deletions prevent growth in the E. coli core metabolic model, and how well does genome-scale iJO1366 essentiality agree with Keio knockout phenotypes on aerobic glucose minimal medium?"
+        },
+        "results": {
+          "text": "The core model's lethal genes are gltA (b0720), icd (b1136), gapA (b1779), ptsH (b2415), ptsI (b2416), eno (b2779), and pgk (b2926). The ptsH and ptsI deletions are infeasible under fixed maintenance; the other 135 core solves are optimal. All 1367 iJO1366 solves are optimal.",
+          "start": 43,
+          "end": 43,
+          "raw": "The core model's lethal genes are `gltA` (b0720), `icd` (b1136), `gapA` (b1779), `ptsH` (b2415), `ptsI` (b2416), `eno` (b2779), and `pgk` (b2926). The `ptsH` and `ptsI` deletions are infeasible under fixed maintenance; the other 135 core solves are optimal. All 1367 iJO1366 solves are optimal."
+        },
+        "limitations": {
+          "text": "The core model covers only a small metabolic network. Experimental essentiality scoring is performed only on iJO1366, not on the core model.",
+          "start": 72,
+          "end": 72,
+          "raw": "- The core model covers only a small metabolic network. Experimental essentiality scoring is performed only on iJO1366, not on the core model."
+        }
+      },
+      "commit": "80f302d0529e6a474535eab4d4c492ca482b7a20",
+      "readme_sha256": "42bed986c46e497b53f8b5ea47dfdd9e3d85263b358c946dfb6dcf6329a80372",
+      "url": "https://github.com/Akkaya-Furkan/ecoli-fba-knockout/blob/80f302d0529e6a474535eab4d4c492ca482b7a20/README.md"
+    },
+    {
+      "id": "P16",
+      "repo": "amp-classifier",
+      "fields": {
+        "title": {
+          "text": "Antimicrobial peptide classifier",
+          "start": 1,
+          "end": 1,
+          "raw": "# Antimicrobial peptide classifier"
+        },
+        "results": {
+          "text": "Random splitting overstates ROC-AUC by about 0.065 (secreted peptides) and 0.04 (fragments) compared to the purged split.",
+          "start": 40,
+          "end": 40,
+          "raw": "- Random splitting overstates ROC-AUC by about 0.065 (secreted peptides) and 0.04 (fragments) compared to the purged split."
+        },
+        "limitations": {
+          "text": "Negative set choice inflates performance and cannot be removed. Both negative sets are assumed inactive (non-antimicrobial annotation in Swiss-Prot), not assayed. They differ from AMPs in origin and processing, so a classifier may partly learn \"database/annotation type\". Fragments are not real peptides; secreted peptides are few (1,279 after matching) and hard to match on every property. Performance against experimentally confirmed inactive peptides is not measured (not done).",
+          "start": 55,
+          "end": 58,
+          "raw": "- **Negative set choice inflates performance and cannot be removed.** Both negative sets are *assumed* inactive (non-antimicrobial annotation in Swiss-Prot),\n  not assayed. They differ from AMPs in origin and processing, so a classifier may partly learn \"database/annotation type\". Fragments are not real peptides;\n  secreted peptides are few (1,279 after matching) and hard to match on every property. Performance against experimentally confirmed inactive peptides is **not measured**\n  (not done)."
+        },
+        "question": {
+          "text": "Can antimicrobial activity be predicted from sequence features alone, and how much of the apparent accuracy survives once train and test peptides are properly separated by sequence similarity?",
+          "start": 3,
+          "end": 4,
+          "raw": "**Question.** Can antimicrobial activity be predicted from sequence features alone, and how much of the\napparent accuracy survives once train and test peptides are properly separated by sequence similarity?"
+        }
+      },
+      "commit": "b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4",
+      "readme_sha256": "c01b57d2f14fa9b3876e1fe42431a478b7e87f0514e902b4a3f0f4efeb2e3d04",
+      "url": "https://github.com/Akkaya-Furkan/amp-classifier/blob/b814ca7a95ac4520cb1cd16a5c1a6cb5b69075a4/README.md"
+    },
+    {
+      "id": "P17",
+      "repo": "proteomics-differential-abundance",
+      "fields": {
+        "title": {
+          "text": "Differential protein abundance in a public PRIDE benchmark",
+          "start": 1,
+          "end": 1,
+          "raw": "# Differential protein abundance in a public PRIDE benchmark"
+        },
+        "question": {
+          "text": "Can a reproducible differential abundance workflow recover the direction of an E. coli spike-in difference, and how much do missing-value assumptions change the calls?",
+          "start": 5,
+          "end": 5,
+          "raw": "Can a reproducible differential abundance workflow recover the direction of an E. coli spike-in difference, and how much do missing-value assumptions change the calls?"
+        },
+        "results": {
+          "text": "There are 612 missing entries among 30,114 tested sample–protein entries (2.03%). Before the coverage filter, sample missingness ranges from 13.20% to 23.81%; afterward it ranges from 0.46% to 6.63%. These percentages use the corresponding unrounded counts in missingness.tsv.",
+          "start": 30,
+          "end": 30,
+          "raw": "There are 612 missing entries among 30,114 tested sample–protein entries (2.03%). Before the coverage filter, sample missingness ranges from 13.20% to 23.81%; afterward it ranges from 0.46% to 6.63%. These percentages use the corresponding unrounded counts in [missingness.tsv](results/missingness.tsv)."
+        },
+        "limitations": {
+          "text": "The archive assigns 6/143 fraction files to L1–L3 although their filenames contain Ecoli30: fractions 23 and 24 in each L sample. H1 also has 23 fraction files versus 24 in each other aggregate sample. The processed H/L assignments and published contrast are retained; resolving these source inconsistencies is not done. Per-sample file counts and conflicts are reported in results/samples.tsv.",
+          "start": 91,
+          "end": 91,
+          "raw": "- The archive assigns 6/143 fraction files to L1–L3 although their filenames contain `Ecoli30`: fractions 23 and 24 in each L sample. H1 also has 23 fraction files versus 24 in each other aggregate sample. The processed H/L assignments and published contrast are retained; resolving these source inconsistencies is **not done**. Per-sample file counts and conflicts are reported in `results/samples.tsv`."
+        }
+      },
+      "commit": "c3ead3b3eff3632d5e2dff121237fde92d77e84a",
+      "readme_sha256": "7969f4eff122d45fed20073b27b681262047288ff56694935dc3f0224b867c4a",
+      "url": "https://github.com/Akkaya-Furkan/proteomics-differential-abundance/blob/c3ead3b3eff3632d5e2dff121237fde92d77e84a/README.md"
+    },
+    {
+      "id": "P18",
+      "repo": "compute-job-queue",
+      "fields": {
+        "title": {
+          "text": "Compute Job Queue",
+          "start": 1,
+          "end": 1,
+          "raw": "# Compute Job Queue"
+        },
+        "question": {
+          "text": "Can long-running scientific jobs be queued, tracked and retried reliably?",
+          "start": 5,
+          "end": 5,
+          "raw": "Can long-running scientific jobs be queued, tracked and retried reliably?"
+        },
+        "results": {
+          "text": "19/19 pytest cases passed in 8.03 seconds.",
+          "start": 94,
+          "end": 94,
+          "raw": "- 19/19 pytest cases passed in 8.03 seconds."
+        },
+        "limitations": {
+          "text": "Distributed execution, authentication/TLS, production deployment, resource quotas, retry backoff, scheduling, priorities and arbitrary task plugins: not done. Bind to loopback; this is a trusted local demonstration service.",
+          "start": 112,
+          "end": 114,
+          "raw": "- Distributed execution, authentication/TLS, production deployment, resource\n  quotas, retry backoff, scheduling, priorities and arbitrary task plugins:\n  **not done**. Bind to loopback; this is a trusted local demonstration service."
+        }
+      },
+      "commit": "eb8aa0895e26080c3e0cfa36a6d87a255abc5e9d",
+      "readme_sha256": "789a1ea41cd62f6832352838e9638b251b293d84f08909aa968a1fc469683d93",
+      "url": "https://github.com/Akkaya-Furkan/compute-job-queue/blob/eb8aa0895e26080c3e0cfa36a6d87a255abc5e9d/README.md"
+    },
+    {
+      "id": "P19",
+      "repo": "lab-experiment-log",
+      "fields": {
+        "title": {
+          "text": "Lab experiment log",
+          "start": 1,
+          "end": 1,
+          "raw": "# Lab experiment log"
+        },
+        "question": {
+          "text": "Can a small multi-user application record experiments with authentication and attachments, while keeping sample-level measurements searchable, exportable and persistent? The one-day implementation boundary and numerical acceptance targets are in docs/SCOPE.md.",
+          "start": 8,
+          "end": 11,
+          "raw": "Can a small multi-user application record experiments with authentication and\nattachments, while keeping sample-level measurements searchable, exportable and\npersistent? The one-day implementation boundary and numerical acceptance targets\nare in [docs/SCOPE.md](docs/SCOPE.md)."
+        },
+        "results": {
+          "text": "The demo verifier starts a loopback HTTP server, logs into both accounts, exercises search/export/download, stops the server and starts a fresh app against the same SQLite file. CSV labels, values, units and dates match the database. The downloaded attachment matches all 76 bytes, with SHA-256 2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc. Duplicate seeding is refused and the stored record counts remain unchanged.",
+          "start": 95,
+          "end": 100,
+          "raw": "The demo verifier starts a loopback HTTP server, logs into both accounts, exercises\nsearch/export/download, stops the server and starts a fresh app against the same\nSQLite file. CSV labels, values, units and dates match the database. The downloaded\nattachment matches all **76 bytes**, with SHA-256\n`2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc`.\nDuplicate seeding is refused and the stored record counts remain unchanged."
+        },
+        "limitations": {
+          "text": "Public/production deployment: not done. Run locally using the instructions above; no deployed service is claimed.",
+          "start": 128,
+          "end": 129,
+          "raw": "- Public/production deployment: **not done**. Run locally using the instructions\n  above; no deployed service is claimed."
+        }
+      },
+      "commit": "53bba3b3ee574e8edc32a0a8f4912224c1eca4ec",
+      "readme_sha256": "3e188319a0e3bd0ce61713c56b01bd2ba262f307c021cd91ffe0f1c7f763f748",
+      "url": "https://github.com/Akkaya-Furkan/lab-experiment-log/blob/53bba3b3ee574e8edc32a0a8f4912224c1eca4ec/README.md"
+    },
+    {
+      "id": "P20",
+      "repo": "pubmed-entity-mining",
+      "fields": {
+        "title": {
+          "text": "PubMed text mining: target and compound mentions",
+          "start": 1,
+          "end": 1,
+          "raw": "# PubMed text mining: target and compound mentions"
+        },
+        "question": {
+          "text": "Can target and compound mentions be extracted automatically from PubMed abstracts, and which entities occur most often in a small sample across publication years?",
+          "start": 9,
+          "end": 10,
+          "raw": "Can target and compound mentions be extracted automatically from PubMed abstracts,\nand which entities occur most often in a small sample across publication years?"
+        },
+        "results": {
+          "text": "The download contains 60/60 requested records, 60 unique PMIDs and 59 non-empty abstracts. One record passed the remote hasabstract query but has no abstract in the returned XML; it is retained transparently. The extractor produced 527 mention rows, 164 distinct document–entity pairs, and 20 distinct canonical entities.",
+          "start": 95,
+          "end": 99,
+          "raw": "The download contains **60/60 requested records**, **60 unique PMIDs** and\n**59 non-empty abstracts**. One record passed the remote `hasabstract` query but\nhas no abstract in the returned XML; it is retained transparently. The extractor\nproduced **527 mention rows**, **164 distinct document–entity pairs**, and\n**20 distinct canonical entities**."
+        },
+        "limitations": {
+          "text": "Human-labelled evaluation sample: not done. Independent human review and inter-annotator agreement: not done. The implementing assistant also authored labels, so evaluator dependence and annotation bias remain. The artifact-level deliverables (extraction table, accuracy calculation, figures and write-up) are present, but the human-annotation part of the original scope is not fulfilled.",
+          "start": 141,
+          "end": 145,
+          "raw": "- Human-labelled evaluation sample: **not done**. Independent human review and\n  inter-annotator agreement: **not done**. The implementing assistant also authored\n  labels, so evaluator dependence and annotation bias remain. The artifact-level\n  deliverables (extraction table, accuracy calculation, figures and write-up) are\n  present, but the human-annotation part of the original scope is not fulfilled."
+        }
+      },
+      "commit": "f18a03c1ef0af914a90268385f68a9a96fb9e480",
+      "readme_sha256": "14ca3ab56ee26648ee5e5f0046db986ade9c3df09b7db439db6a87b657c83b31",
+      "url": "https://github.com/Akkaya-Furkan/pubmed-entity-mining/blob/f18a03c1ef0af914a90268385f68a9a96fb9e480/README.md"
+    },
+    {
+      "id": "P21",
+      "repo": "variant-annotation-pipeline",
+      "fields": {
+        "title": {
+          "text": "Variant annotation pipeline",
+          "start": 1,
+          "end": 1,
+          "raw": "# Variant annotation pipeline"
+        },
+        "question": {
+          "text": "Can a public VCF be annotated and filtered reproducibly with a small local resource, without downloading a VEP or SnpEff database?",
+          "start": 5,
+          "end": 6,
+          "raw": "Can a public VCF be annotated and filtered reproducibly with a small local\nresource, without downloading a VEP or SnpEff database?"
+        },
+        "results": {
+          "text": "The committed run covers chromosome 1, positions 66,926–939,279 (1-based), and produced 300 annotated rows from 300 unique input alleles. All 300/300 matched the local snapshot; 0 were unmatched. There are 0 missing gene annotations and 3 missing molecular-consequence annotations.",
+          "start": 87,
+          "end": 90,
+          "raw": "The committed run covers chromosome 1, positions **66,926–939,279** (1-based),\nand produced **300 annotated rows from 300 unique input alleles**. All **300/300**\nmatched the local snapshot; **0** were unmatched. There are **0** missing gene\nannotations and **3** missing molecular-consequence annotations."
+        },
+        "limitations": {
+          "text": "Not done: VEP/SnpEff execution or de novo transcript consequence prediction. Molecular consequences and gene labels are copied from the bundled ClinVar resource.",
+          "start": 131,
+          "end": 132,
+          "raw": "- **Not done:** VEP/SnpEff execution or de novo transcript consequence prediction.\n  Molecular consequences and gene labels are copied from the bundled ClinVar resource."
+        }
+      },
+      "commit": "ebb5cdef1fabe9878ba876ae2c60f61d9bd87d7d",
+      "readme_sha256": "7489f2614fa884cff2bd149ef5f80e3e45db3ce40c44dce09f2e3fcfd2189b76",
+      "url": "https://github.com/Akkaya-Furkan/variant-annotation-pipeline/blob/ebb5cdef1fabe9878ba876ae2c60f61d9bd87d7d/README.md"
+    },
+    {
+      "id": "P22",
+      "repo": "protein-phylogenetics",
+      "fields": {
+        "title": {
+          "text": "Protein family phylogenetics",
+          "start": 1,
+          "end": 1,
+          "raw": "# Protein family phylogenetics"
+        },
+        "question": {
+          "text": "Does the tree topology of a protein family agree with known taxonomy?",
+          "start": 7,
+          "end": 7,
+          "raw": "Does the tree topology of a protein family agree with known taxonomy?"
+        },
+        "results": {
+          "text": "The topology agrees with 2 of 3 sampled order splits. Carnivora is not an exclusive group in this tree; this is retained as a negative result.",
+          "start": 44,
+          "end": 45,
+          "raw": "The topology agrees with **2 of 3** sampled order splits. Carnivora is not an\nexclusive group in this tree; this is retained as a negative result."
+        },
+        "limitations": {
+          "text": "This is a single mitochondrial protein and a deliberately small sample. It is not a species-tree estimate, and order-level agreement does not imply correct relationships within an order.",
+          "start": 143,
+          "end": 145,
+          "raw": "- This is a single mitochondrial protein and a deliberately small sample. It is\n  not a species-tree estimate, and order-level agreement does not imply correct\n  relationships within an order."
+        }
+      },
+      "commit": "ad73ba23ee6b10996355b122eba6f769552026e6",
+      "readme_sha256": "01e501f16f3b9cfbd326c15f00093777ab923e29eeea3e31381975b25913c87a",
+      "url": "https://github.com/Akkaya-Furkan/protein-phylogenetics/blob/ad73ba23ee6b10996355b122eba6f769552026e6/README.md"
+    },
+    {
+      "id": "P24",
+      "repo": "admet-multitask",
+      "fields": {
+        "title": {
+          "text": "Multi-endpoint ADMET — does multitask learning help?",
+          "start": 1,
+          "end": 1,
+          "raw": "# Multi-endpoint ADMET — does multitask learning help?"
+        },
+        "question": {
+          "text": "Does a shared molecular representation improve aqueous solubility, Caco-2 permeability and CYP2D6 inhibition predictions compared with independent single-task models?",
+          "start": 5,
+          "end": 7,
+          "raw": "Does a shared molecular representation improve aqueous solubility, Caco-2\npermeability and CYP2D6 inhibition predictions compared with independent\nsingle-task models?"
+        },
+        "results": {
+          "text": "Intervals are two-sided paired t intervals with Bonferroni correction across three endpoints (per-interval confidence 98.3333%, family alpha 0.05). The predeclared practical threshold is 5% relative MAE reduction or 0.02 absolute AP increase, alongside an interval strictly above zero. The evidence supports 0/3 endpoint-level improvement claims. This is insufficient evidence of benefit, rather than proof that the approaches are equivalent.",
+          "start": 57,
+          "end": 62,
+          "raw": "Intervals are two-sided paired t intervals with Bonferroni correction across\nthree endpoints (per-interval confidence 98.3333%, family alpha 0.05).\nThe predeclared practical threshold is 5% relative MAE reduction or 0.02 absolute\nAP increase, alongside an interval strictly above zero. The evidence supports\n0/3 endpoint-level improvement claims. This is insufficient\nevidence of benefit, rather than proof that the approaches are equivalent."
+        },
+        "limitations": {
+          "text": "Repeated scaffold splits / split-level uncertainty: not done. Seed intervals describe training randomness conditional on one split. Five differences provide limited support for the t approximation.",
+          "start": 108,
+          "end": 110,
+          "raw": "- Repeated scaffold splits / split-level uncertainty: **not done**. Seed\n  intervals describe training randomness conditional on one split. Five\n  differences provide limited support for the t approximation."
+        }
+      },
+      "commit": "45d4a0ec97b886afc5a7a79ef444aba5312af2fa",
+      "readme_sha256": "f699038f98ab587a56ad1d5785ba5d1718375b37597066fd954da2dda6feed05",
+      "url": "https://github.com/Akkaya-Furkan/admet-multitask/blob/45d4a0ec97b886afc5a7a79ef444aba5312af2fa/README.md"
+    },
+    {
+      "id": "P25",
+      "repo": "cell-image-segmentation",
+      "fields": {
+        "title": {
+          "text": "Cell image segmentation",
+          "start": 1,
+          "end": 1,
+          "raw": "# Cell image segmentation"
+        },
+        "question": {
+          "text": "Can cells be segmented reliably in a public microscopy image set? This experiment addresses nuclei, using public fluorescence images and reference instance masks. On this held-out subset, both methods exceed the prespecified foreground Dice target. Instance separation remains imperfect, and the experiment does not establish reliability on other microscopy data.",
+          "start": 5,
+          "end": 9,
+          "raw": "Can cells be segmented reliably in a public microscopy image set?\nThis experiment addresses **nuclei**, using public fluorescence images and\nreference instance masks. On this held-out subset, both methods exceed the\nprespecified foreground Dice target. Instance separation remains imperfect,\nand the experiment does not establish reliability on other microscopy data."
+        },
+        "results": {
+          "text": "Scores are macro averages over 12 held-out images containing 392 reference nuclei, evaluated at native resolution.",
+          "start": 44,
+          "end": 45,
+          "raw": "Scores are macro averages over **12 held-out images containing\n392 reference nuclei**, evaluated at native resolution."
+        },
+        "limitations": {
+          "text": "Whole-cell membrane/cytoplasm segmentation: not done. Labels are nuclei.",
+          "start": 125,
+          "end": 125,
+          "raw": "- Whole-cell membrane/cytoplasm segmentation: **not done**. Labels are nuclei."
+        }
+      },
+      "commit": "57b501f19450830b0667efe5ab25df766d73e1dd",
+      "readme_sha256": "d654e83190548ab5ec9d5d64a424c60653d9d2c3a5316aaac41cabad81ed1d8a",
+      "url": "https://github.com/Akkaya-Furkan/cell-image-segmentation/blob/57b501f19450830b0667efe5ab25df766d73e1dd/README.md"
+    },
+    {
+      "id": "P26",
+      "repo": "16s-microbiome-diversity",
+      "fields": {
+        "title": {
+          "text": "16S microbiome — community differences",
+          "start": 1,
+          "end": 1,
+          "raw": "# 16S microbiome — community differences"
+        },
+        "question": {
+          "text": "Do microbial communities differ among body sites in a public 16S rRNA dataset?",
+          "start": 5,
+          "end": 5,
+          "raw": "Do microbial communities differ among body sites in a public 16S rRNA dataset?"
+        },
+        "results": {
+          "text": "PERMANOVA attributes 45.84% of distance variation to body-site grouping in the complete-visit subset. The exact restricted test is not significant at 0.05; the small independent subject count limits inference. Alpha tests also do not pass the threshold after correction. The dispersion diagnostic does not reject, which is not proof of equal dispersion.",
+          "start": 32,
+          "end": 32,
+          "raw": "PERMANOVA attributes **45.84%** of distance variation to body-site grouping in the complete-visit subset. The exact restricted test is not significant at 0.05; the small independent subject count limits inference. Alpha tests also do not pass the threshold after correction. The dispersion diagnostic does not reject, which is not proof of equal dispersion."
+        },
+        "limitations": {
+          "text": "Only 2 independent participants; repeated visits do not increase independent biological replication. Whole-trajectory exchangeability is an assumption, not a randomized design. Exact p-values have a coarse reference distribution. No population-level or causal conclusion is supported.",
+          "start": 80,
+          "end": 80,
+          "raw": "- Only 2 independent participants; repeated visits do not increase independent biological replication. Whole-trajectory exchangeability is an assumption, not a randomized design. Exact p-values have a coarse reference distribution. No population-level or causal conclusion is supported."
+        }
+      },
+      "commit": "57e4ab9757c0d8f0859513b4747576b8def2fc60",
+      "readme_sha256": "1319a63491fe53b8dd7a679c70d2206fd0d185102b43bddcb1e10fa11a012e79",
+      "url": "https://github.com/Akkaya-Furkan/16s-microbiome-diversity/blob/57e4ab9757c0d8f0859513b4747576b8def2fc60/README.md"
+    }
+  ],
+  "audit": [
+    {
+      "id": "P01",
+      "repo": "egfr-resistance-docking",
+      "included": false,
+      "reason": "Missing evidence section: results"
+    },
+    {
+      "id": "P02",
+      "repo": "egfr-mmgbsa",
+      "included": false,
+      "reason": "Planned status"
+    },
+    {
+      "id": "P03",
+      "repo": "herg-cardiotox-classifier",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P04",
+      "repo": "nf-virtual-screening",
+      "included": false,
+      "reason": "Planned status"
+    },
+    {
+      "id": "P05",
+      "repo": "target-prioritization-network",
+      "included": false,
+      "reason": "Planned status"
+    },
+    {
+      "id": "P06",
+      "repo": "md-trajectory-viewer",
+      "included": false,
+      "reason": "Missing evidence section: results, limitations"
+    },
+    {
+      "id": "P07",
+      "repo": "bio-lookup-api",
+      "included": false,
+      "reason": "Missing evidence section: results"
+    },
+    {
+      "id": "P08",
+      "repo": "ligprep-cli",
+      "included": false,
+      "reason": "Missing evidence section: results"
+    },
+    {
+      "id": "P09",
+      "repo": "openaq-pipeline",
+      "included": false,
+      "reason": "Missing evidence section: results, limitations"
+    },
+    {
+      "id": "P10",
+      "repo": "service-health-dashboard",
+      "included": false,
+      "reason": "Missing evidence section: results"
+    },
+    {
+      "id": "P11",
+      "repo": "rnaseq-de-reproduction",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P12",
+      "repo": "scrnaseq-pbmc-annotation",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P13",
+      "repo": "plddt-calibration",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P14",
+      "repo": "dose-response-toolkit",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P15",
+      "repo": "ecoli-fba-knockout",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P16",
+      "repo": "amp-classifier",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P17",
+      "repo": "proteomics-differential-abundance",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P18",
+      "repo": "compute-job-queue",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P19",
+      "repo": "lab-experiment-log",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P20",
+      "repo": "pubmed-entity-mining",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P21",
+      "repo": "variant-annotation-pipeline",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P22",
+      "repo": "protein-phylogenetics",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P23",
+      "repo": "egfr-umbrella-sampling",
+      "included": false,
+      "reason": "README: atomistic EGFR profile not established; model-only result"
+    },
+    {
+      "id": "P24",
+      "repo": "admet-multitask",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P25",
+      "repo": "cell-image-segmentation",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P26",
+      "repo": "16s-microbiome-diversity",
+      "included": true,
+      "reason": "README question, results and limitations present"
+    },
+    {
+      "id": "P27",
+      "repo": "portfolio-site",
+      "included": false,
+      "reason": "Self excluded"
+    },
+    {
+      "id": "P28",
+      "repo": "quarto-report-generator",
+      "included": false,
+      "reason": "Planned status"
+    },
+    {
+      "id": "P29",
+      "repo": "binding-pocket-conservation",
+      "included": false,
+      "reason": "Planned status"
+    },
+    {
+      "id": "P30",
+      "repo": "survival-analysis",
+      "included": false,
+      "reason": "Planned status"
+    }
+  ]
+}
